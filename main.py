@@ -6,10 +6,12 @@ app = Flask(__name__)
 
 PI = 3.14
 
+# home route
 @app.route('/')
 def index():
     return '<h1 style="text-align: center; color: royalblue"> Area And Perimeter API<h1/>'
 
+# area of circle route
 @app.route('/api/calc/area/circle/')
 def calc_Area_Of_Circle():
     radius = int(request.args.get('radius'))
@@ -17,6 +19,7 @@ def calc_Area_Of_Circle():
     response =  {"radius": radius, "area": area }
     return jsonify(response)
 
+# area of rectangle route
 @app.route('/api/calc/area/rectangle/')
 def calc_Area_Of_Rectangle():
     width = int(request.args.get('width'))
@@ -25,6 +28,7 @@ def calc_Area_Of_Rectangle():
     response = {"width": width, "height": height, "area": area}
     return jsonify(response)
 
+# area of triangle route
 @app.route('/api/calc/area/triangle/')
 def calc_Area_Of_Triangle():
     base = int(request.args.get('base'))
@@ -33,6 +37,7 @@ def calc_Area_Of_Triangle():
     response = {"base": base, "height": height, "area": area}
     return jsonify(response)
 
+#perimeter of rectangle route
 @app.route('/api/calc/perimeter/rectangle/')
 def calc_Perimeter_Of_Rectangle():
     width = int(request.args.get('width'))
@@ -40,6 +45,8 @@ def calc_Perimeter_Of_Rectangle():
     perimeter = (2*height) + (2*width)
     response = {"width": width, "height": height, "perimeter": perimeter}
     return jsonify(response)
+
+#perimeter of triangle route
 
 @app.route('/api/calc/perimeter/triangle/')
 def  calc_Perimeter_Of_Triangle():
@@ -51,12 +58,18 @@ def  calc_Perimeter_Of_Triangle():
     return jsonify(response)
 
 
+#circumference of circle route 
+
 @app.route('/api/calc/circumference/circle/')
 def  calc_Circumference_Of_Circle():
+    #Given only radius
     if request.args.get('radius'):
         radius = int(request.args.get('radius'))
         circumference =  2 * PI * radius
         response = {"radius": radius, "circumference": circumference}
+        
+    #Given only diameter
+
     elif request.args.get('diameter'):
         diameter = int(request.args.get('diameter'))
         circumference =  PI * diameter
