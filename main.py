@@ -67,9 +67,8 @@ def  calc_Circumference_Of_Circle():
         radius = int(request.args.get('radius'))
         circumference =  2 * PI * radius
         response = {"radius": radius, "circumference": circumference}
-        
-    #Given only diameter
 
+    #Given only diameter
     elif request.args.get('diameter'):
         diameter = int(request.args.get('diameter'))
         circumference =  PI * diameter
