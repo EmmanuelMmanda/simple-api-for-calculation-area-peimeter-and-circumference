@@ -3,7 +3,7 @@ A simple python- flask restful API for calculation area perimeter and circumfere
 
 
 # API Documentation 
-The API Documentation can be found inside the documentation folder 
+The API Documentation can be found inside the documentation folder  to open import the json formatted documenation into your POSTMAN workspace
 
 OR 
 
@@ -13,6 +13,6 @@ Our hosted documentation at https://documenter.getpostman.com/view/25025197/2s8Z
 
 1. Clone this repository on your local machine.
 2. From your terminal install project dependancy flask -
-      Lear how to install here https://phoenixnap.com/kb/install-flask
+      Learn how to install here - https://phoenixnap.com/kb/install-flask
 3. from your CLI Run python main.py  
 4. Test the endpoints.
