@@ -14,5 +14,5 @@ Our hosted documentation at https://documenter.getpostman.com/view/25025197/2s8Z
 1. Clone this repository on your local machine.
 2. From your terminal install project dependancy flask -
       Learn how to install here - https://phoenixnap.com/kb/install-flask
-3. from your CLI Run python main.py  
+3. From your CLI Run python main.py  
 4. Test the endpoints.
