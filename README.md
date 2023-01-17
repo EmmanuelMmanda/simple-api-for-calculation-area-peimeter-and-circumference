@@ -1,4 +1,4 @@
-# AREA PERIMETER CORCUMFERENCE API
+# AREA PERIMETER CIRCUMFERENCE API
 A simple python- flask restful API for calculation area perimeter and circumference of dimensional objects
 
 
