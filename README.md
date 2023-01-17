@@ -8,3 +8,11 @@ The API Documentation can be found inside the documentation folder
 OR 
 
 Our hosted documentation at https://documenter.getpostman.com/view/25025197/2s8ZDU7QV4
+
+# How to run Project
+
+1. Clone this repository on your local machine.
+2. From your terminal install project dependancy flask -
+      Lear how to install here https://phoenixnap.com/kb/install-flask
+3. from your CLI Run python main.py  
+4. Test the endpoints.
