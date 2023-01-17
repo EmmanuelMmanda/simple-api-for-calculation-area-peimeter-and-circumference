@@ -12,7 +12,7 @@ def index():
 
 @app.route('/api/calc/area/circle/')
 def calc_Area_Of_Circle():
-    radius = int(request.argss.get('radius'))
+    radius = int(request.args.get('radius'))
     area = (PI * (radius * radius))
     response =  {"radius": radius, "area": area }
     return jsonify(response)

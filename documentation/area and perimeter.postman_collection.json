@@ -1,0 +1,699 @@
+{
+	"info": {
+		"_postman_id": "2130c7d6-1b35-4cba-8dc5-4480d34738e4",
+		"name": "area and perimeter",
+		"description": "A collection of API endpoints for calculating Area Perimeter and Circumference of either circle , triangle or rectangle",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "25025197"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:81/api/calc/area/circle/?radius=10",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:81/api/calc/area/circle/?radius=10",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "81",
+					"path": [
+						"api",
+						"calc",
+						"area",
+						"circle",
+						""
+					],
+					"query": [
+						{
+							"key": "radius",
+							"value": "10",
+							"description": "radius of the circle"
+						}
+					]
+				},
+				"description": "An endpoint for calculating area of a circle"
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:81/api/calc/area/circle/?radius=10",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:81/api/calc/area/circle/?radius=10",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "81",
+							"path": [
+								"api",
+								"calc",
+								"area",
+								"circle",
+								""
+							],
+							"query": [
+								{
+									"key": "radius",
+									"value": "10",
+									"description": "radius of the circle"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "27"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.3 Python/3.9.12"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 17 Jan 2023 08:30:54 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"area\": 314,\n    \"radius\": 10\n}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:81/api/calc/area/rectangle/?width=20&height=12",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:81/api/calc/area/rectangle/?width=20&height=12",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "81",
+					"path": [
+						"api",
+						"calc",
+						"area",
+						"rectangle",
+						""
+					],
+					"query": [
+						{
+							"key": "width",
+							"value": "20",
+							"description": "width of the rectangle"
+						},
+						{
+							"key": "height",
+							"value": "12",
+							"description": "height of the rectangle\n"
+						}
+					]
+				},
+				"description": "Endpoint for calculating area of a rectangle"
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:81/api/calc/area/rectangle/?width=20&height=12",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:81/api/calc/area/rectangle/?width=20&height=12",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "81",
+							"path": [
+								"api",
+								"calc",
+								"area",
+								"rectangle",
+								""
+							],
+							"query": [
+								{
+									"key": "width",
+									"value": "20",
+									"description": "width of the rectangle"
+								},
+								{
+									"key": "height",
+									"value": "12",
+									"description": "height of the rectangle\n"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "36"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.3 Python/3.9.12"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 17 Jan 2023 08:31:14 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"area\": 240,\n    \"height\": 12,\n    \"width\": 20\n}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:81/api/calc/area/triangle/?base=20&height=2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:81/api/calc/area/triangle/?base=20&height=2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "81",
+					"path": [
+						"api",
+						"calc",
+						"area",
+						"triangle",
+						""
+					],
+					"query": [
+						{
+							"key": "base",
+							"value": "20",
+							"description": "base length of the triangle"
+						},
+						{
+							"key": "height",
+							"value": "2",
+							"description": "height of the rectgangle"
+						}
+					]
+				},
+				"description": "Endpoint for calculating area of the triangle"
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:81/api/calc/area/triangle/?base=20&height=2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:81/api/calc/area/triangle/?base=20&height=2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "81",
+							"path": [
+								"api",
+								"calc",
+								"area",
+								"triangle",
+								""
+							],
+							"query": [
+								{
+									"key": "base",
+									"value": "20",
+									"description": "base length of the triangle"
+								},
+								{
+									"key": "height",
+									"value": "2",
+									"description": "height of the rectgangle"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "35"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.3 Python/3.9.12"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 17 Jan 2023 08:31:22 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"area\": 20,\n    \"base\": 20,\n    \"height\": 2\n}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:81/api/calc/perimeter/rectangle/?width=20&height=24&",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:81/api/calc/perimeter/rectangle/?width=20&height=24&",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "81",
+					"path": [
+						"api",
+						"calc",
+						"perimeter",
+						"rectangle",
+						""
+					],
+					"query": [
+						{
+							"key": "width",
+							"value": "20",
+							"description": "a width of the rectangle"
+						},
+						{
+							"key": "height",
+							"value": "24",
+							"description": "a height of the rectangle"
+						},
+						{
+							"key": "",
+							"value": null
+						}
+					]
+				},
+				"description": "Endpoint for calculating a perimeter of the rectangle"
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:81/api/calc/perimeter/rectangle/?width=20&height=24&",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:81/api/calc/perimeter/rectangle/?width=20&height=24&",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "81",
+							"path": [
+								"api",
+								"calc",
+								"perimeter",
+								"rectangle",
+								""
+							],
+							"query": [
+								{
+									"key": "width",
+									"value": "20",
+									"description": "a width of the rectangle"
+								},
+								{
+									"key": "height",
+									"value": "24",
+									"description": "a height of the rectangle"
+								},
+								{
+									"key": "",
+									"value": null
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "40"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.3 Python/3.9.12"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 17 Jan 2023 08:31:30 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"height\": 24,\n    \"perimeter\": 88,\n    \"width\": 20\n}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:81/api/calc/perimeter/triangle/?side1=20&side2=12&side3=13",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:81/api/calc/perimeter/triangle/?side1=20&side2=12&side3=13",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "81",
+					"path": [
+						"api",
+						"calc",
+						"perimeter",
+						"triangle",
+						""
+					],
+					"query": [
+						{
+							"key": "side1",
+							"value": "20",
+							"description": "first side of the triangle"
+						},
+						{
+							"key": "side2",
+							"value": "12",
+							"description": "second side of the triangle"
+						},
+						{
+							"key": "side3",
+							"value": "13",
+							"description": "third side of the rectangle"
+						}
+					]
+				},
+				"description": "Endpoint for calculating perimeter of the triangle"
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:81/api/calc/perimeter/triangle/?side1=20&side2=12&side3=13",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:81/api/calc/perimeter/triangle/?side1=20&side2=12&side3=13",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "81",
+							"path": [
+								"api",
+								"calc",
+								"perimeter",
+								"triangle",
+								""
+							],
+							"query": [
+								{
+									"key": "side1",
+									"value": "20",
+									"description": "first side of the triangle"
+								},
+								{
+									"key": "side2",
+									"value": "12",
+									"description": "second side of the triangle"
+								},
+								{
+									"key": "side3",
+									"value": "13",
+									"description": "third side of the rectangle"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "50"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.3 Python/3.9.12"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 17 Jan 2023 08:31:38 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"perimeter\": 45,\n    \"side1\": 20,\n    \"side2\": 12,\n    \"side3\": 13\n}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:81/api/calc/circumference/circle/?radius=22",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:81/api/calc/circumference/circle/?radius=22",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "81",
+					"path": [
+						"api",
+						"calc",
+						"circumference",
+						"circle",
+						""
+					],
+					"query": [
+						{
+							"key": "radius",
+							"value": "22",
+							"description": "radius of the circle"
+						}
+					]
+				},
+				"description": "Endpoint for calculating circumference of circle given only a radius"
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:81/api/calc/circumference/circle/?radius=22",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:81/api/calc/circumference/circle/?radius=22",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "81",
+							"path": [
+								"api",
+								"calc",
+								"circumference",
+								"circle",
+								""
+							],
+							"query": [
+								{
+									"key": "radius",
+									"value": "22",
+									"description": "radius of the circle"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "37"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.3 Python/3.9.12"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 17 Jan 2023 08:31:46 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"circumference\": 138.16,\n    \"radius\": 22\n}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:81/api/calc/circumference/circle/?diameter=44",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:81/api/calc/circumference/circle/?diameter=44",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "81",
+					"path": [
+						"api",
+						"calc",
+						"circumference",
+						"circle",
+						""
+					],
+					"query": [
+						{
+							"key": "diameter",
+							"value": "44",
+							"description": "diameter of the circle"
+						}
+					]
+				},
+				"description": "Endpoint for calculating circumference of circle given only the diameter"
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:81/api/calc/circumference/circle/?diameter=44",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:81/api/calc/circumference/circle/?diameter=44",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "81",
+							"path": [
+								"api",
+								"calc",
+								"circumference",
+								"circle",
+								""
+							],
+							"query": [
+								{
+									"key": "diameter",
+									"value": "44",
+									"description": "diameter of the circle"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "39"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.3 Python/3.9.12"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 17 Jan 2023 08:31:53 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"circumference\": 138.16,\n    \"diameter\": 44\n}"
+				}
+			]
+		}
+	]
+}
